@@ -3,53 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brand Assets</title>
+  <title>dealhead Brand Assets</title>
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; }
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #222; }
     h1 { font-size: 1.8rem; margin-bottom: 4px; }
     p.subtitle { color: #666; margin-bottom: 32px; font-size: 0.95rem; }
-    h2 { font-size: 1.1rem; margin: 28px 0 8px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
-    ul { list-style: none; padding: 0; margin: 0; }
+    h2 { font-size: 1.1rem; margin: 32px 0 10px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; margin-bottom: 16px; }
+    .asset-card { border: 1px solid #eee; border-radius: 8px; padding: 12px; text-align: center; }
+    .asset-card img { max-width: 100%; max-height: 60px; object-fit: contain; margin-bottom: 8px; background: #16202a; border-radius: 4px; padding: 8px; }
+    .asset-card a { display: block; font-size: 0.8rem; color: #0066cc; text-decoration: none; word-break: break-all; }
+    .asset-card a:hover { text-decoration: underline; }
+    .asset-card .label { font-size: 0.75rem; color: #888; margin-top: 4px; }
+    ul { list-style: none; padding: 0; margin: 0 0 16px; }
     li { padding: 4px 0; }
-    a { color: #0066cc; text-decoration: none; font-size: 0.9rem; }
-    a:hover { text-decoration: underline; }
+    li a { color: #0066cc; text-decoration: none; font-size: 0.9rem; }
+    li a:hover { text-decoration: underline; }
     .path { color: #888; font-size: 0.8rem; margin-left: 8px; }
-    .empty { color: #aaa; font-size: 0.85rem; font-style: italic; }
+    .token-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; margin-bottom: 16px; }
+    .token-row { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; }
+    .swatch { width: 28px; height: 28px; border-radius: 4px; border: 1px solid #ddd; flex-shrink: 0; }
+    code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: 0.8rem; }
   </style>
 </head>
 <body>
-  <h1>Brand Assets</h1>
-  <p class="subtitle">Assets are served from <strong>https://abruno-dh.github.io/brand-assets/</strong></p>
+  <h1>dealhead Brand Assets</h1>
+  <p class="subtitle">Assets served from <strong>https://abruno-dh.github.io/brand-assets/</strong></p>
 
   <h2>CSS</h2>
   <ul>
-    <li><a href="css/tokens.css">tokens.css</a><span class="path">css/tokens.css</span></li>
-    <li><a href="css/global.css">global.css</a><span class="path">css/global.css</span></li>
+    <li><a href="css/tokens.css">tokens.css</a><span class="path">css/tokens.css — design tokens (colors, type, spacing)</span></li>
+    <li><a href="css/global.css">global.css</a><span class="path">css/global.css — global brand styles</span></li>
   </ul>
+
+  <h2>Color Palette</h2>
+  <div class="token-grid">
+    <div class="token-row"><div class="swatch" style="background:#080d11"></div><code>--color-navy-900</code></div>
+    <div class="token-row"><div class="swatch" style="background:#16202a"></div><code>--color-navy-800</code></div>
+    <div class="token-row"><div class="swatch" style="background:#253445"></div><code>--color-navy-700</code></div>
+    <div class="token-row"><div class="swatch" style="background:#2d3e50"></div><code>--color-navy-500</code></div>
+    <div class="token-row"><div class="swatch" style="background:#5d7085"></div><code>--color-navy-300</code></div>
+    <div class="token-row"><div class="swatch" style="background:#697e94"></div><code>--color-navy-200</code></div>
+    <div class="token-row"><div class="swatch" style="background:hsla(210,44.69%,41.47%,1)"></div><code>--color-accent-blue</code></div>
+    <div class="token-row"><div class="swatch" style="background:#ff7a59"></div><code>--color-accent-orange</code></div>
+    <div class="token-row"><div class="swatch" style="background:#737373"></div><code>--color-neutral-400</code></div>
+    <div class="token-row"><div class="swatch" style="background:#c8c8c8"></div><code>--color-neutral-200</code></div>
+  </div>
 
   <h2>Logos</h2>
-  <ul>
-    <li class="empty">No logos uploaded yet.</li>
-  </ul>
+  <div class="grid">
+    <div class="asset-card">
+      <img src="logos/dealhead-logo.svg" alt="dealhead logo" />
+      <a href="logos/dealhead-logo.svg">dealhead-logo.svg</a>
+      <div class="label">Primary logo</div>
+    </div>
+    <div class="asset-card">
+      <img src="logos/dealhead-logo-alt.svg" alt="dealhead logo alt" />
+      <a href="logos/dealhead-logo-alt.svg">dealhead-logo-alt.svg</a>
+      <div class="label">Logo alt</div>
+    </div>
+    <div class="asset-card">
+      <img src="logos/dealbinder.svg" alt="DealBinder" />
+      <a href="logos/dealbinder.svg">dealbinder.svg</a>
+      <div class="label">DealBinder</div>
+    </div>
+    <div class="asset-card">
+      <img src="logos/dealbinder-white.svg" alt="DealBinder white" />
+      <a href="logos/dealbinder-white.svg">dealbinder-white.svg</a>
+      <div class="label">DealBinder (white)</div>
+    </div>
+    <div class="asset-card">
+      <img src="logos/dhsign.svg" alt="dhSign" />
+      <a href="logos/dhsign.svg">dhsign.svg</a>
+      <div class="label">dhSign</div>
+    </div>
+    <div class="asset-card">
+      <img src="logos/dhsign-white.svg" alt="dhSign white" />
+      <a href="logos/dhsign-white.svg">dhsign-white.svg</a>
+      <div class="label">dhSign (white)</div>
+    </div>
+    <div class="asset-card">
+      <img src="logos/dhneg-web.svg" alt="dhNeg web" />
+      <a href="logos/dhneg-web.svg">dhneg-web.svg</a>
+      <div class="label">dhNeg Web</div>
+    </div>
+    <div class="asset-card">
+      <img src="logos/dhneg-white.svg" alt="dhNeg white" />
+      <a href="logos/dhneg-white.svg">dhneg-white.svg</a>
+      <div class="label">dhNeg (white)</div>
+    </div>
+  </div>
 
   <h2>Icons</h2>
+  <div class="grid">
+    <div class="asset-card">
+      <img src="icons/arrow.svg" alt="arrow" />
+      <a href="icons/arrow.svg">arrow.svg</a>
+    </div>
+    <div class="asset-card">
+      <img src="icons/vector-arrow.svg" alt="vector arrow" />
+      <a href="icons/vector-arrow.svg">vector-arrow.svg</a>
+    </div>
+    <div class="asset-card">
+      <img src="icons/group-arrow.svg" alt="group arrow" />
+      <a href="icons/group-arrow.svg">group-arrow.svg</a>
+    </div>
+    <div class="asset-card">
+      <img src="icons/icon-vector.svg" alt="icon vector" />
+      <a href="icons/icon-vector.svg">icon-vector.svg</a>
+    </div>
+    <div class="asset-card">
+      <img src="icons/frame-icon.svg" alt="frame icon" />
+      <a href="icons/frame-icon.svg">frame-icon.svg</a>
+    </div>
+    <div class="asset-card">
+      <img src="icons/group-1283.svg" alt="group 1283" />
+      <a href="icons/group-1283.svg">group-1283.svg</a>
+    </div>
+    <div class="asset-card">
+      <img src="icons/group-1284.svg" alt="group 1284" />
+      <a href="icons/group-1284.svg">group-1284.svg</a>
+    </div>
+  </div>
+
+  <h2>Images</h2>
   <ul>
-    <li class="empty">No icons uploaded yet.</li>
+    <li class="empty" style="color:#aaa;font-style:italic;font-size:0.85rem">Add images to the images/ folder and list them here.</li>
   </ul>
 
   <h2>Fonts</h2>
   <ul>
-    <li class="empty">No fonts uploaded yet.</li>
-  </ul>
-
-  <h2>Images</h2>
-  <ul>
-    <li class="empty">No images uploaded yet.</li>
-  </ul>
-
-  <h2>Webflow</h2>
-  <ul>
-    <li class="empty">No Webflow assets uploaded yet.</li>
+    <li style="font-size:0.9rem">Satoshi — primary sans-serif <span class="path">(load via your font provider)</span></li>
+    <li style="font-size:0.9rem">Lora — secondary serif <span class="path">(load via Google Fonts or your font provider)</span></li>
   </ul>
 </body>
 </html>

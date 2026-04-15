@@ -1,30 +1,113 @@
 /* =============================================================
-   Brand Design Tokens
+   Brand Design Tokens — dealhead
+   Auto-extracted from Webflow (dealhead Corpsite)
    Served via GitHub Pages: https://abruno-dh.github.io/brand-assets/css/tokens.css
    ============================================================= */
 
 :root {
-  /* Colors — fill in with your brand palette */
-  --color-primary: ;
-  --color-secondary: ;
-  --color-accent: ;
-  --color-background: ;
-  --color-text: ;
 
-  /* Typography */
-  --font-family-base: ;
-  --font-family-heading: ;
+  /* ------------------------------------------------------------------
+     Colors — Dark Navy Scale
+  ------------------------------------------------------------------ */
+  --color-navy-900: #080d11;
+  --color-navy-800: #16202a;
+  --color-navy-700: #253445;
+  --color-navy-600: #263340;
+  --color-navy-500: #2d3e50;
+  --color-navy-400: #2f4051;
+  --color-navy-300: #5d7085;
+  --color-navy-200: #697e94;
+
+  /* ------------------------------------------------------------------
+     Colors — Neutrals
+  ------------------------------------------------------------------ */
+  --color-neutral-700: #444444;
+  --color-neutral-400: #737373;
+  --color-neutral-200: #c8c8c8;
+  --color-white:       #ffffff;
+  --color-black:       #000000;
+
+  /* ------------------------------------------------------------------
+     Colors — Brand Accents
+  ------------------------------------------------------------------ */
+  --color-accent-blue:   hsla(210, 44.69%, 41.47%, 1.00); /* #3d7399 */
+  --color-accent-orange: #ff7a59;
+  --color-accent-orange-alt: #ff6b00;
+
+  /* ------------------------------------------------------------------
+     Colors — Semantic Aliases
+  ------------------------------------------------------------------ */
+  --color-background:    var(--color-navy-900);
+  --color-surface:       var(--color-navy-800);
+  --color-surface-alt:   var(--color-navy-700);
+  --color-text-primary:  var(--color-white);
+  --color-text-secondary:var(--color-navy-200);
+  --color-text-muted:    var(--color-neutral-400);
+  --color-primary:       var(--color-accent-blue);
+  --color-accent:        var(--color-accent-orange);
+  --color-border:        hsla(0, 0%, 100%, 0.10);
+
+  /* ------------------------------------------------------------------
+     Typography — Font Families
+  ------------------------------------------------------------------ */
+  --font-family-base:    'Satoshi', sans-serif;
+  --font-family-heading: 'Satoshi', sans-serif;
+  --font-family-serif:   'Lora', serif;
+
+  /* ------------------------------------------------------------------
+     Typography — Type Scale
+  ------------------------------------------------------------------ */
+  --font-size-xs:   12px;
+  --font-size-sm:   14px;
   --font-size-base: 16px;
+  --font-size-md:   18px;
+  --font-size-lg:   20px;
+  --font-size-xl:   22px;
+  --font-size-2xl:  24px;
+  --font-size-3xl:  28px;
+  --font-size-4xl:  30px;
+  --font-size-5xl:  36px;
+  --font-size-6xl:  40px;
+  --font-size-7xl:  50px;
+  --font-size-8xl:  70px;
+  --font-size-9xl:  90px;
 
-  /* Spacing */
-  --spacing-xs: 4px;
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 48px;
+  /* ------------------------------------------------------------------
+     Typography — Font Weights
+  ------------------------------------------------------------------ */
+  --font-weight-regular:   400;
+  --font-weight-medium:    500;
+  --font-weight-semibold:  600;
+  --font-weight-bold:      700;
 
-  /* Border radius */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 16px;
+  /* ------------------------------------------------------------------
+     Spacing
+  ------------------------------------------------------------------ */
+  --spacing-1:  10px;
+  --spacing-2:  15px;
+  --spacing-3:  20px;
+  --spacing-4:  25px;
+  --spacing-5:  30px;
+  --spacing-6:  35px;
+  --spacing-7:  40px;
+  --spacing-8:  60px;
+  --spacing-9:  75px;
+  --spacing-10: 100px;
+
+  /* ------------------------------------------------------------------
+     Border Radius
+  ------------------------------------------------------------------ */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-full: 9999px;
+
+  /* ------------------------------------------------------------------
+     Layout
+  ------------------------------------------------------------------ */
+  --gap-sm:  16px;
+  --gap-md:  20px;
+  --gap-lg:  25px;
+  --gap-xl:  100px;
+  --gap-2xl: 125px;
 }
