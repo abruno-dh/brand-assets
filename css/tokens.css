@@ -1,0 +1,30 @@
+/* =============================================================
+   Brand Design Tokens
+   Served via GitHub Pages: https://abruno-dh.github.io/brand-assets/css/tokens.css
+   ============================================================= */
+
+:root {
+  /* Colors — fill in with your brand palette */
+  --color-primary: ;
+  --color-secondary: ;
+  --color-accent: ;
+  --color-background: ;
+  --color-text: ;
+
+  /* Typography */
+  --font-family-base: ;
+  --font-family-heading: ;
+  --font-size-base: 16px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 48px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}

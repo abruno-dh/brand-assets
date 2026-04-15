@@ -1,0 +1,35 @@
+/* =============================================================
+   Global Brand Styles
+   Served via GitHub Pages: https://abruno-dh.github.io/brand-assets/css/global.css
+   ============================================================= */
+
+@import url('./tokens.css');
+
+/* Base reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base, sans-serif);
+  font-size: var(--font-size-base, 16px);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.5;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading, inherit);
+  line-height: 1.2;
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+}
+a:hover {
+  color: var(--color-accent);
+}
